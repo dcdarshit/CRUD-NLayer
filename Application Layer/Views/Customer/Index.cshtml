@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<DataAccessLayer.Model.Customer>;
+
+<div class="container">
+  <div class="row">
+      <div class="col-6 offset-3">
+        <h3>Employee Table</h3>
+            @*//<a class="btn-submit"  asp-controller="Customer" asp-action="Create">Create </a>*@
+            <a asp-controller="Customer" asp-action="Create" class="btn btn-lg btn-success">Create Employee</a>
+          <table class="table table-bordered">
+              <thead class="text-center">
+                  <tr>
+                      <th>Id</th>
+                      <th>Name</th>
+                      <th>Designation</th>
+                  </tr>
+              </thead>
+              <tbody>
+                        @foreach (var z in Model) 
+                        {
+                         <tr>
+                            <td>@z.Id</td>
+                            <td>@z.Name</td>
+                            <td>@z.Designation</td>
+                        </tr>
+                        }
+              </tbody>
+          </table>
+      </div>
+  </div>
+</div>

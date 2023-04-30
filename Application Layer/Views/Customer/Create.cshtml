@@ -1,0 +1,43 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@*<div class="container">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <form>
+                <div >
+                 <label>Name</label>
+                 <input type="text" id="Name" class="form-control"/>
+                </div>
+
+                 <div >
+                 <label>Designation</label>
+                <input type="text" id="Name" class="form-control"/>
+                </div>
+              @*<div >
+                    <label>Name</label>
+                    <input type="text" id="Name" class="form-control"/>
+                </div>*@
+                @*<div >
+                <label>Name</label>
+                <input type="Submit" id="Submit" class="form-control"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>*@
+
+<form>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Name</label>
+        <input type="text" class="form-control" id="EmpName" aria-describedby="emailHelp" placeholder="Enter Name">
+        <small id="emailHelp" class="form-text text-muted">Please Enter your Name.</small>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Designation</label>
+        <input type="text" class="form-control" id="EmpDesignation" placeholder="Enter Designation">
+    </div>  
+    <button type="submit" class="btn btn-primary" asp-controller="Customer" asp-action="CreateCustomer">Submit</button>
+</form>
